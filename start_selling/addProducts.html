@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add products</title>
+    <link rel="stylesheet" href="./addProducts.css">
+</head>
+<body>
+    <nav>
+        <a href="./startSelling.html" class="logo"><img src="../loginRegistration/image/mobiStoreLogo_removebg.png" width="100" alt=""></a>
+    </nav>
+
+
+    <!-- add phones -->
+    <header>
+		<h1>Add Phones</h1>
+		<form id="new-task-form">
+			<div class="headContent">
+                <input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+                placeholder="Brand Name"/>
+
+                <input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add Phone" />
+            </div >
+            <div class='productDetails'>
+                <div class="file">
+                    <label for="file">Add phone image</label>
+                    <input 
+                        type="file" 
+                        name="new-task-input" 
+                        id="new-task-input" 
+                        placeholder="add phone image"/>
+                </div>
+                <div class="phone_spex">
+                    <input type="text" name="new-task-input" id="new-task-input" placeholder="Mobile Name">
+                    <input type="text" name="new-task-input" id="new-task-input" placeholder="Ram">
+                    <input type="text" name="new-task-input" id="new-task-input" placeholder="Display">
+                    <input type="text" name="new-task-input" id="new-task-input" placeholder="Processor">
+                </div>
+                <div class="price">
+                    <label for="price">Enter the price of the phone</label>
+                    <input type="text"
+                    name="new-task-input"
+                    id="new-task-input" 
+                    />
+                </div>
+            </div>
+		</form>
+	</header>
+
+
+<!-- added phones  -->
+	<main>
+		<section class="task-list">
+			<h2>Added Phones</h2>
+
+			<div id="tasks">
+
+				<div class="task">
+                    <div class="addedProduct">
+                        <div class="content">
+                            <input 
+                                type="text" 
+                                class="text" 
+                                value="Brand Name"
+                                readonly>
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                    
+                    <div class='productDetails'>
+                        <div class="file">
+                            <label for="file">Phone image</label>
+                            <input 
+                                type="image" 
+                                name="new-task-input" 
+                                id="new-task-input" 
+                                src="./phone-IMAGE/-original-imagca5ajerqpfjy.webp"
+                                height="200"
+                                width="100"
+                                />
+                        </div>
+                        <div class="phone_spex">
+                            <input type="text" name="new-task-input" id="new-task-input" class="text" readonly value="A new task">
+                            <input type="text" name="new-task-input" id="new-task-input" class="text" readonly value="A new task">
+                            <input type="text" name="new-task-input" id="new-task-input" class="text" readonly value="A new task">
+                            <input type="text" name="new-task-input" id="new-task-input" class="text" readonly value="A new task">
+                        </div>
+                        <div class="price">
+                            <label for="price">Price of the phone</label>
+                            <input type="text"
+                            name="new-task-input"
+                            id="new-task-input" 
+                            class="text" 
+                            value="A new task"
+                            readonly 
+                            />
+                        </div>
+                    </div>
+
+				</div>
+
+			</div>
+		</section>
+	</main>
+    <script src="./addProducts.js"></script>
+</body>
+</html>
+
+
